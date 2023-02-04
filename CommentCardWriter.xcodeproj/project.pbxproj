@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		F8572968298E6F7400A12609 /* CommentCardWriterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8572967298E6F7400A12609 /* CommentCardWriterApp.swift */; };
-		F857296A298E6F7400A12609 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8572969298E6F7400A12609 /* ContentView.swift */; };
+		F857296A298E6F7400A12609 /* WriterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8572969298E6F7400A12609 /* WriterView.swift */; };
 		F857296C298E6F7600A12609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F857296B298E6F7600A12609 /* Assets.xcassets */; };
 		F857296F298E6F7600A12609 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F857296E298E6F7600A12609 /* Preview Assets.xcassets */; };
 		F8572979298E6F7700A12609 /* CommentCardWriterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8572978298E6F7700A12609 /* CommentCardWriterTests.swift */; };
 		F8572983298E6F7700A12609 /* CommentCardWriterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8572982298E6F7700A12609 /* CommentCardWriterUITests.swift */; };
 		F8572985298E6F7700A12609 /* CommentCardWriterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8572984298E6F7700A12609 /* CommentCardWriterUITestsLaunchTests.swift */; };
+		F8572994298E706500A12609 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8572993298E706500A12609 /* Comments.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		F8572964298E6F7400A12609 /* CommentCardWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommentCardWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8572967298E6F7400A12609 /* CommentCardWriterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardWriterApp.swift; sourceTree = "<group>"; };
-		F8572969298E6F7400A12609 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F8572969298E6F7400A12609 /* WriterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriterView.swift; sourceTree = "<group>"; };
 		F857296B298E6F7600A12609 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F857296E298E6F7600A12609 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F8572974298E6F7700A12609 /* CommentCardWriterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommentCardWriterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		F857297E298E6F7700A12609 /* CommentCardWriterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommentCardWriterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8572982298E6F7700A12609 /* CommentCardWriterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardWriterUITests.swift; sourceTree = "<group>"; };
 		F8572984298E6F7700A12609 /* CommentCardWriterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardWriterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F8572993298E706500A12609 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				F8572967298E6F7400A12609 /* CommentCardWriterApp.swift */,
-				F8572969298E6F7400A12609 /* ContentView.swift */,
+				F8572991298E6FBB00A12609 /* View */,
+				F8572992298E705500A12609 /* Model */,
 				F857296B298E6F7600A12609 /* Assets.xcassets */,
 				F857296D298E6F7600A12609 /* Preview Content */,
 			);
@@ -125,6 +128,22 @@
 				F8572984298E6F7700A12609 /* CommentCardWriterUITestsLaunchTests.swift */,
 			);
 			path = CommentCardWriterUITests;
+			sourceTree = "<group>";
+		};
+		F8572991298E6FBB00A12609 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8572969298E6F7400A12609 /* WriterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8572992298E705500A12609 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F8572993298E706500A12609 /* Comments.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F857296A298E6F7400A12609 /* ContentView.swift in Sources */,
+				F857296A298E6F7400A12609 /* WriterView.swift in Sources */,
 				F8572968298E6F7400A12609 /* CommentCardWriterApp.swift in Sources */,
+				F8572994298E706500A12609 /* Comments.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
