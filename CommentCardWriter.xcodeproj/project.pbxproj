@@ -15,6 +15,7 @@
 		F8572983298E6F7700A12609 /* CommentCardWriterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8572982298E6F7700A12609 /* CommentCardWriterUITests.swift */; };
 		F8572985298E6F7700A12609 /* CommentCardWriterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8572984298E6F7700A12609 /* CommentCardWriterUITestsLaunchTests.swift */; };
 		F8572994298E706500A12609 /* Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8572993298E706500A12609 /* Comments.swift */; };
+		F8DFC8842993ADEC00961B68 /* Subjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DFC8832993ADEC00961B68 /* Subjects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		F8572982298E6F7700A12609 /* CommentCardWriterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardWriterUITests.swift; sourceTree = "<group>"; };
 		F8572984298E6F7700A12609 /* CommentCardWriterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardWriterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F8572993298E706500A12609 /* Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comments.swift; sourceTree = "<group>"; };
+		F8DFC8832993ADEC00961B68 /* Subjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subjects.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				F8572993298E706500A12609 /* Comments.swift */,
+				F8DFC8832993ADEC00961B68 /* Subjects.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8DFC8842993ADEC00961B68 /* Subjects.swift in Sources */,
 				F857296A298E6F7400A12609 /* WriterView.swift in Sources */,
 				F8572968298E6F7400A12609 /* CommentCardWriterApp.swift in Sources */,
 				F8572994298E706500A12609 /* Comments.swift in Sources */,
