@@ -9,35 +9,35 @@ import SwiftUI
 
 struct WriterView: View {
     let examples = Comments.generateExampleComments()
-    let comment = Comments()
-    @State private var subjects = Subjects.generateExampleSubjects()
-    @State private var selectedSubject = String()
+    let commentObject = Comments()
+    @State var comment = String()
+    @State private var subjects = Subjects().getSubjects()
+    @State private var selectedSubject = "CompSci"
     @State private var enjoyment: Double = 50.0
-    @State private var choice: Int = 0 {
-        didSet{
-            if choice >= examples.count {
-                choice = 0
-            }
-        }
-    }
+    
     var body: some View {
         Form {
+            Section(header: Text("What subject do you want a comment for? ")) {
+                Picker("Subjects", selection: $selectedSubject) {
+                    ForEach(subjects, id: \.self) {
+                        Text("\($0)")
+                    }
+                }
+                .pickerStyle(.wheel).frame(height: 120)
+            }
             Section(header: Text("How much do you enjoy your subject?")) {
                 Slider(value: $enjoyment, in: 0...100.0)
             }
             Section{
                 Button("Generate Comment", action: {
-                    if choice > examples.count-1 {
-                        choice = 1
-                    } else {
-                        choice += 1
-                    }
+                    comment = commentObject.generateComment(enjoyment: enjoyment, subject: selectedSubject)
                 })
             }
             VStack(alignment: .leading, spacing: 20) {
-                Text("\(comment.generateComment(enjoyment: enjoyment, subject: subjects[choice]))")
+                Text("\(comment)")
             }
         }
+
     }
 }
 

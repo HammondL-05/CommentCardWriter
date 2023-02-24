@@ -11,17 +11,21 @@ class Subjects {
     var subjectArray: [String]
     
     init() {
-        subjectArray = Array()
+        subjectArray = ["CompSci", "Chemistry", "Pure Maths", "Applied Maths"]
     }
     
-#if DEBUG
-static func generateExampleSubjects() -> [String] {
-    var subjects: [String] = []
-    for i in 1..<5 {
-        subjects.append("Subject\(i)")
+    func getSubjects() -> [String] {
+        return subjectArray
     }
     
-    return subjects
-}
-#endif
+//#if DEBUG
+//static func generateExampleSubjects() -> [String] {
+//    var subjects: [String] = []
+//    for i in 0..<5 {
+//        subjects.append("Subject\(i)")
+//    }
+//    
+//    return subjects
+//}
+//#endif
 }

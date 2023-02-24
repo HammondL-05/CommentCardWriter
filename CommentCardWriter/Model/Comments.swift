@@ -9,20 +9,21 @@ import Foundation
 
 class Comments {
     var commentArray: [String]
-    var enjoyment: Double
     
     init() {
         commentArray = Array()
-        enjoyment = 50.0
     }
     
     func generateComment(enjoyment: Double, subject: String) -> String {
-        if self.enjoyment >= 50.0 {
+        if enjoyment >= 75.0 {
             return "I love \(subject)"
+        } else if enjoyment >= 50.0 {
+            return "I like \(subject)"
+        } else if enjoyment < 50.0 && enjoyment > 25.0 {
+            return "I dislike \(subject)"
         } else {
             return "I hate \(subject)"
         }
-    
     }
     
     
