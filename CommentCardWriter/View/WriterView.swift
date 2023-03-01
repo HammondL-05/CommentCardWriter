@@ -23,7 +23,7 @@ struct WriterView: View {
                         Text("\($0)")
                     }
                 }
-                .pickerStyle(.wheel).frame(height: 120)
+                .pickerStyle(.wheel).frame(height: 120).clipped()
             }
             Section(header: Text("How much do you enjoy your subject?")) {
                 Slider(value: $enjoyment, in: 0...100.0)

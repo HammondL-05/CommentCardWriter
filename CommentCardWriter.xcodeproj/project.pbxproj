@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F84E110629AF5F6E006C33E1 /* PreviousCommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E110529AF5F6E006C33E1 /* PreviousCommentsView.swift */; };
+		F84E110829AF5FE9006C33E1 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84E110729AF5FE9006C33E1 /* RootTabView.swift */; };
 		F8572968298E6F7400A12609 /* CommentCardWriterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8572967298E6F7400A12609 /* CommentCardWriterApp.swift */; };
 		F857296A298E6F7400A12609 /* WriterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8572969298E6F7400A12609 /* WriterView.swift */; };
 		F857296C298E6F7600A12609 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F857296B298E6F7600A12609 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F84E110529AF5F6E006C33E1 /* PreviousCommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousCommentsView.swift; sourceTree = "<group>"; };
+		F84E110729AF5FE9006C33E1 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
 		F8572964298E6F7400A12609 /* CommentCardWriter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommentCardWriter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8572967298E6F7400A12609 /* CommentCardWriterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCardWriterApp.swift; sourceTree = "<group>"; };
 		F8572969298E6F7400A12609 /* WriterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriterView.swift; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				F8572969298E6F7400A12609 /* WriterView.swift */,
+				F84E110529AF5F6E006C33E1 /* PreviousCommentsView.swift */,
+				F84E110729AF5FE9006C33E1 /* RootTabView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -279,9 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84E110629AF5F6E006C33E1 /* PreviousCommentsView.swift in Sources */,
 				F8DFC8842993ADEC00961B68 /* Subjects.swift in Sources */,
 				F857296A298E6F7400A12609 /* WriterView.swift in Sources */,
 				F8572968298E6F7400A12609 /* CommentCardWriterApp.swift in Sources */,
+				F84E110829AF5FE9006C33E1 /* RootTabView.swift in Sources */,
 				F8572994298E706500A12609 /* Comments.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
