@@ -14,6 +14,10 @@ class Subjects {
         subjectArray = ["CompSci", "Chemistry", "Pure Maths", "Applied Maths"]
     }
     
+//    func chooseSubject() {
+//        
+//    }
+    
     func getSubjects() -> [String] {
         return subjectArray
     }

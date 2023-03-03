@@ -10,7 +10,9 @@ import SwiftUI
 struct WriterView: View {
     let examples = Comments.generateExampleComments()
     let commentObject = Comments()
-    @State var comment = String()
+    @StateObject let previousComments = PreviousComments()
+    @State var saved = false
+    @State var comment = "No comment..."
     @State private var subjects = Subjects().getSubjects()
     @State private var selectedSubject = "CompSci"
     @State private var enjoyment: Double = 50.0
@@ -31,11 +33,23 @@ struct WriterView: View {
             Section{
                 Button("Generate Comment", action: {
                     comment = commentObject.generateComment(enjoyment: enjoyment, subject: selectedSubject)
+                    saved = false
                 })
             }
             VStack(alignment: .leading, spacing: 20) {
                 Text("\(comment)")
             }
+            LazyVStack(alignment: .leading, spacing: 20) {
+                Button("Save Comment", action: {
+                    previousComments.saveComments(comment: comment)
+                    saved = true
+                })
+            }
+//            VStack(alignment: .leading, spacing: 20) {
+//                if saved == true {
+//                    Text("Saved \(Image)")
+//                }
+//            }
         }
 
     }

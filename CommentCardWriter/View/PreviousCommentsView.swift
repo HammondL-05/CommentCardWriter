@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct PreviousCommentsView: View {
+    let previousComments = PreviousComments()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Form {
+            Section {
+                Text("\(previousComments.comments)")
+            }
+        }
     }
 }
 
