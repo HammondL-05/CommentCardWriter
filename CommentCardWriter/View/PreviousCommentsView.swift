@@ -12,7 +12,7 @@ struct PreviousCommentsView: View {
     var body: some View {
         Form {
             Section {
-                Text("\(previousComments.comments)")
+                Text(previousComments.concatenateComments())
             }
         }
     }

@@ -10,7 +10,7 @@ import SwiftUI
 struct WriterView: View {
     let examples = Comments.generateExampleComments()
     let commentObject = Comments()
-    @StateObject let previousComments = PreviousComments()
+    @StateObject var previousComments = PreviousComments()
     @State var saved = false
     @State var comment = "No comment..."
     @State private var subjects = Subjects().getSubjects()

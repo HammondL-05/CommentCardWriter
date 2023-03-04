@@ -9,6 +9,7 @@ import Foundation
 
 class PreviousComments: ObservableObject {
     @Published var comments: [String] = []
+    var commentString: String = ""
     
 
     
@@ -20,5 +21,12 @@ class PreviousComments: ObservableObject {
     func displayComments() -> [String] {
         comments = FileManager.default.load(from: "comments.json") ?? ["No comments"]
         return comments
+    }
+    
+    func concatenateComments() -> String {
+        for comment in self.comments {
+            self.commentString += "\(comment)" + "\n"
+        }
+        return commentString
     }
 }
